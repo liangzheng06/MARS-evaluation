@@ -8,11 +8,9 @@ This code uses the 1024-dim IDE descriptor [1] and KISSME [2] and XQDA [3] dista
 
 To run this code, one should follow the three steps below.
 
-1. Download the dataset.
+1. Download the pre-computed IDE feature: http://pan.baidu.com/s/1mhBrwMG or https://drive.google.com/folderview?id=0B6tjyrV1YrHed3BnZnNaSUs3eEE&usp=sharing. Unzip it in the root folder.
 
-2. Download the pre-computed IDE feature.
-
-3. Run "test_mars.m".
+2. Run "test_mars.m".
 
 
 

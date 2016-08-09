@@ -20,6 +20,11 @@ If you want to try your own descriptor or to learn new features, you should do a
 
 
 
+If you have any suggestions or comments, please email me at liangzheng06@gmail.com
+
+
+
+
 References
 
 [1] L. Zheng et al. Person Re-identification in the Wild. Arxiv, 2016. 

@@ -22,16 +22,13 @@ function [ux,u,m] = applypca2(X)
 % [u,v]=pca(X);
 [d,N]  = size(X);
 
-mm = mean(X,2);
-X = X - mm*ones(1,N); % remove mean from data
+m = mean(X,2);
+X = X - m*ones(1,N); % remove mean from data
 
-cc = cov(X,1); % compute covariance 
+cc = cov(X',1); % compute covariance 
 [cvv,cdd] = eig(cc); % compute eignvectors
 [zz,ii] = sort(diag(-cdd)); % sort according to eigenvalues
-evects = cvv(:,ii); % pick leading eigenvectors
-u = X*evects;
+u = cvv(:,ii); % pick leading eigenvectors
 
-
-m=mean(X,2);
-ux=u'*(X-repmat(m,1,size(X,2)));
+ux=u'*X;
 
